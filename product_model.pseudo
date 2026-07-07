@@ -14,3 +14,7 @@
 # Placeholder product list
 product_list = []
 
+function filter_products(filters):
+    filtered_products = []
+    
+    return filtered_products
