@@ -16,5 +16,20 @@ product_list = []
 
 function filter_products(filters):
     filtered_products = []
+
+    for products in product_list:
+        for each key, value in filters:
+            if key == "width" and product.width != value:
+                matches_filters = false
+            if key == "height" and product.height != value:
+                matches_filters = false
+            if key == "length" and product.length != value:
+                matches_filters = false
+            if key == "weight" and product.weight != value:
+                matches_filters = false
+            if key == "color" and product.color != value:
+                matches_filters = falses
+            if key == "brand" and product.brand != value:
+                matches_filters = false
     
     return filtered_products
