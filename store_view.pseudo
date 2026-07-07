@@ -1,5 +1,19 @@
 # Displays product listings
 
-# Placeholder function:
+add_product(1, "Ergonomic Desk Chair", 199.99, 60, 120, 60, 15, "Black", "Steelcase")
+add_product(2, "Gaming Chair Pro", 299.99, 65, 135, 65, 18, "Red", "DxRacer")
+add_product(3, "Minimalist Wooden Desk", 349.99, 120, 75, 60, 25, "Brown", "Ikea")
+add_product(4, "Compact Desk Fan", 24.99, 20, 30, 20, 2, "Black", "Honeywell")
+
+# 2. Authentication inputs
+create_user("Alice Smith", "alice@email.com", "securePass123")
+login_user("alice@email.com", "wrongPass")
+login_user("alice@email.com", "securePass123")
+
+# 4. Search parameter input
+my_filters = {"color": "Black"}
+
 # function display_products()
+
+
 
