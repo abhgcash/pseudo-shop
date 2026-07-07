@@ -20,3 +20,20 @@ function create_user(name, email, password):
     append new_user to global_users_list
     print "Registration successful for: " + name
     return true
+
+# Authenticate an existing user
+function login_user(email, password):
+    for each user in global_users_list:
+        if user.email == email and user.password == password:
+            
+            # =========================================================
+            # [ACTIVITY INSTRUCTION: TRIGGER MERGE CONFLICT HERE]
+            # Partner 1: Delete line 34 and change it to: print "Access Granted! Hello, " + user.name
+            # Partner 2: Delete line 34 and change it to: print "Welcome to the system, " + user.name
+            # =========================================================
+            print "Login successful! Welcome back, " + user.name
+            
+            return true
+            
+    print "Login failed: Invalid credentials."
+    return false
