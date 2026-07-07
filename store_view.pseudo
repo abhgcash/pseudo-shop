@@ -3,3 +3,18 @@
 # Placeholder function:
 # function display_products()
 
+function displays_products()
+	products = get_all_products()
+
+	if product is empty:
+		print "No products available"
+		return
+
+	for each product in products:
+		print "Name: " + product.name
+		print "Price: " + product.price
+		print "Weight: " + product.weight
+		print "Height: " + product.height
+		print "Length: " + product.length
+		print "Color: " + product.color
+		print "Brand: " + product.brand
