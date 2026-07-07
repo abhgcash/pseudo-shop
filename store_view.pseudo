@@ -5,13 +5,17 @@ add_product(2, "Gaming Chair Pro", 299.99, 65, 135, 65, 18, "Red", "DxRacer")
 add_product(3, "Minimalist Wooden Desk", 349.99, 120, 75, 60, 25, "Brown", "Ikea")
 add_product(4, "Compact Desk Fan", 24.99, 20, 30, 20, 2, "Black", "Honeywell")
 
-# 2. Authentication inputs
+# Authentication inputs
 create_user("Alice Smith", "alice@email.com", "securePass123")
 login_user("alice@email.com", "wrongPass")
 login_user("alice@email.com", "securePass123")
 
-# 4. Search parameter input
+# Search parameter input
 my_filters = {"color": "Black"}
+
+# Processing data query based on input filters
+filtered_results = filter_products(my_filters)
+
 
 # function display_products()
 
