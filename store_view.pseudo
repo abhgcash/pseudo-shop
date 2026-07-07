@@ -5,19 +5,43 @@ add_product(2, "Gaming Chair Pro", 299.99, 65, 135, 65, 18, "Red", "DxRacer")
 add_product(3, "Minimalist Wooden Desk", 349.99, 120, 75, 60, 25, "Brown", "Ikea")
 add_product(4, "Compact Desk Fan", 24.99, 20, 30, 20, 2, "Black", "Honeywell")
 
-# Authentication inputs
+# User creds
 create_user("Alice Smith", "alice@email.com", "securePass123")
 login_user("alice@email.com", "wrongPass")
 login_user("alice@email.com", "securePass123")
 
-# Search parameter input
+# Filter parameter input
 my_filters = {"color": "Black"}
 
 # Processing data query based on input filters
 filtered_results = filter_products(my_filters)
 
+function display_products(products_to_show):
+    if length of products_to_show == 0:
+        print "--- No products found matching criteria ---"
+        return
 
-# function display_products()
+    print "=== STOREFRONT INVENTORY ==="
+    for each product in products_to_show:
+        print "----------------------------------------"
+        print "Item:  " + product.name
+        print "Price: $" + product.price
+        print "Brand: " + product.brand + " | Color: " + product.color
+        print "Specs: " + product.width + "x" + product.height + "x" + product.length + " cm"
+        print "Weight: " + product.weight + " kg"
+    print "========================================"
 
 
+# Run the store
+function run_store():
+    print "--- Running User Auth Demo ---"
+    print ""
 
+    # Catalog display presentation
+    print "--- Running Full Store Display Demo ---"
+    display_products(products_list)
+    print ""
+
+    # Filtered catalog display presentation
+    print "--- Running Filter Demo (Color: Black) ---"
+    display_products(filtered_results)
