@@ -6,3 +6,8 @@
 # Run the app
 print "Welcome to the Pseudo Shop!"
 
+add_product("Shirt", 499, 10, 20, 2, 1, "Blue", "Uniqlo")
+add_Product("Shirt", 499, 10, 15, 1, 1, "Red", "Nike")
+
+display_products()
+
