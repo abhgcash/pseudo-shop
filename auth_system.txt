@@ -1,0 +1,9 @@
+# Represents a registered user
+class User:
+    function initialize(name, email, password):
+        self.name = name
+        self.email = email
+        self.password = password # In-memory plain text for pseudo-code simplicity
+
+# Global in-memory list to store registered users
+global_users_list = []
