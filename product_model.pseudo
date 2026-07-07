@@ -31,5 +31,8 @@ function filter_products(filters):
                 matches_filters = falses
             if key == "brand" and product.brand != value:
                 matches_filters = false
+
+            if matches_filters:
+                append product to filtered_products
     
     return filtered_products
