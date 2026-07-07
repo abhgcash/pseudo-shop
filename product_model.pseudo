@@ -14,3 +14,42 @@
 # Placeholder product list
 product_list = []
 
+function filter_products(filters):
+    filtered_products = []
+
+    for products in product_list:
+        for each key, value in filters:
+            if key == "width" and product.width != value:
+                matches_filters = false
+            if key == "height" and product.height != value:
+                matches_filters = false
+            if key == "length" and product.length != value:
+                matches_filters = false
+            if key == "weight" and product.weight != value:
+                matches_filters = false
+            if key == "color" and product.color != value:
+                matches_filters = falses
+            if key == "brand" and product.brand != value:
+                matches_filters = false
+
+            if matches_filters:
+                append product to filtered_products
+    
+    return filtered_products
+    
+function add_product(name, width, height, length, weight, color, brand):
+	product = {
+		name: name,
+		width: widht,
+		height: height,
+		lenght: lenght,
+		weight: weight,
+		color: color,
+		brand: brand,
+	}
+
+	product_list.append(product)
+	return product
+
+function get_all_products():
+	return product_list
